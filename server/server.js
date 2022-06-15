@@ -53,7 +53,11 @@ import router from './routes/router.js';
 
 try{
     mongoose.connect(
-        `mongodb://${environmentVariablesConfig.dbHost}:${environmentVariablesConfig.dbPort}/${environmentVariablesConfig.database}`
+        // `mongodb://${environmentVariablesConfig.dbHost}:${environmentVariablesConfig.dbPort}/${environmentVariablesConfig.database}`
+		// `mongodb+srv://sapienttestadmin:<password>@sapienttest.0uteelf.mongodb.net/?retryWrites=true&w=majority`
+		`mongodb+srv://${environmentVariablesConfig.mongoUser}:${environmentVariablesConfig.mongoPass}@${environmentVariablesConfig.dbHost}/${environmentVariablesConfig.database}`
+
+
     );
 }catch(err){
     console.log(err)
