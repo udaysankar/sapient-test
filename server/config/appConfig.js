@@ -24,11 +24,11 @@ const serverPortByDefault = 4000;
  */
 export const environmentVariablesConfig = Object.freeze({
 	formatConnection: process.env.MONGO_FORMAT_CONNECTION || 'standard',
-	dbHost: process.env.MONGO_HOST || 'localhost',
+	dbHost: process.env.MONGO_HOST || 'sapienttest.0uteelf.mongodb.net/test',
 	dbPort: process.env.MONGO_PORT || '27017',
 	database: process.env.MONGO_DB || 'SapientTest',
-	mongoUser: process.env.MONGO_USER || '',
-	mongoPass: process.env.MONGO_PASS || '',
+	mongoUser: process.env.MONGO_USER || 'sapienttestadmin',
+	mongoPass: process.env.MONGO_PASS || 'Tf2U2RKpspwd4cSN',
 	enviroment: (process.env.ENVIROMENT === ENVIRONMENT.DEVELOPMENT) ? ENVIRONMENT.DEVELOPMENT : ENVIRONMENT.PRODUCTION,
 	port: Number(process.env.PORT) || serverPortByDefault
 });
