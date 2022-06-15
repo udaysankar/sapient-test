@@ -2,6 +2,9 @@
   "name": "sapiens-test",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "16.13.0"
+  },
   "dependencies": {
     "@apollo/client": "^3.6.8",
     "@emotion/react": "^11.9.3",
