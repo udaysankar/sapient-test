@@ -18,7 +18,7 @@ export const updatePrimaryColor = (data) => {
     body: changeColorQL,
     redirect: "follow",
   };
-  return fetch("http://localhost:4000/graphql", requestOptions)
+  return fetch("/graphql", requestOptions)
     .then((response) => response.text())
     .then((result) => result)
     .catch((error) => error);
@@ -43,7 +43,7 @@ export const getUserByEmail = (data) => {
     redirect: "follow",
   };
 
-  return fetch("http://localhost:4000/graphql", requestOptions)
+  return fetch("/graphql", requestOptions)
     .then((response) => response.text())
     .then((result) => result)
     .catch((error) => error);
