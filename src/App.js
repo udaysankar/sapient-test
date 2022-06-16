@@ -112,8 +112,8 @@ function App(props) {
             <Button variant="contained" onClick={logout}>
               LogOut
             </Button>
-            <div className="mt-20">
-              <ColorPicker value={color} onChange={handleColorChange} />
+            <div className="mt-20 color-picker">
+              <ColorPicker  value={color} onChange={handleColorChange} />
             </div>
             <div className="mt-20">
               <Typography variant="h5" component="h5" gutterBottom>
