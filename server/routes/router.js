@@ -4,15 +4,12 @@ const router = Router();
 /**
  * Example of route
  */
-//  router.get('/', (req, res) => {
-// 	const status = 200;
-// 	res.status(status).end();
-// });
-
-router.get('/test', (req, res) => {
+ router.get('/', (req, res) => {
 	const status = 200;
-	res.json({test:"test"}).end();
+	res.status(status).end();
 });
+
+
 
 
 export default router;
